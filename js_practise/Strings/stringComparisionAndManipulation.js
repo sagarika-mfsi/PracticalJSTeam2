@@ -54,8 +54,11 @@ let str12 = "hello";
 console.log(
     str11.localeCompare(str12, undefined, { sensitivity: "base" })
 ); //0
+/*Here, sensitivity: "base" means uppercase and lowercase differences are ignored.
+undefined	Use the default locale
+{ sensitivity: "base" }	Ignore differences such as uppercase/lowercase
+ */
 
-/*Here, sensitivity: "base" means uppercase and lowercase differences are ignored.*/
 //5. Replacing Substrings using replace()
 //The replace() method is used to replace part of a string.
 
