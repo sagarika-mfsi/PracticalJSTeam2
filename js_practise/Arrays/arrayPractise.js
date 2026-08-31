@@ -54,7 +54,7 @@ console.log(frt[2]); // Mango
 /*JavaScript arrays do not directly support negative indexes like Python.
 This will not give you the last element:*/
 
-console.log(fruits[-1]); // undefined
+console.log(frt[-1]); // undefined
 
 //accessing using -ve index using at
 let f1 = ["Apple", "Banana", "Mango", "Orange"];
@@ -72,23 +72,6 @@ console.log(f1.at(-3)); // Banana
 } else {
     console.log("You canceled the prompt.");
 }*/
-
-const readline = require("readline");
- 
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
- 
-rl.question("Enter numbers separated by comma: ", function(input) {
- 
-    let arr = input.split(",").map(Number);
- 
-    console.log("Array:", arr);
- 
-    rl.close();
-});
-
 //Creating array using new key word
 let emptyArray = new Array(3);
 console.log(emptyArray);        // [empty × 3]
@@ -104,3 +87,19 @@ console.log(f); // ["Apple", "Banana"]
 // Single non-number argument
 let singleString = new Array("Hello"); 
 console.log(singleString); // ["Hello"]
+
+const readline = require("readline");
+ const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+ 
+rl.question("Enter numbers separated by comma: ", function(input) {
+ 
+    let arr = input.split(",").map(Number);
+ 
+    console.log("my created Array is:", arr);
+ 
+    rl.close();
+});
+
