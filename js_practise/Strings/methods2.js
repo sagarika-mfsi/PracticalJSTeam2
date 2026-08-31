@@ -24,6 +24,10 @@ let str7 = "Apple";
 let str8 = "Apple";
 console.log(str7.localeCompare(str8)); //0
 
+console.log("Apple".localeCompare("Banana")); //-1
+console.log("Apple".localeCompare("Apple")); //0
+console.log("Banana".localeCompare("Apple")); //1
+
 //3. Case-Insensitive String Comparison
 /*JavaScript string comparison is normally case-sensitive.
 We can convert both strings to lowercase using toLowerCase().*/
@@ -41,7 +45,6 @@ if (username.toLowerCase() === input.toLowerCase()) {
 } else {
     console.log("Username does not match");
 }
-
 
 //4. Case-Insensitive Comparison using localeCompare()
 //localeCompare() can also be used with options.
