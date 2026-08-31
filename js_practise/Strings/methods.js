@@ -1,4 +1,27 @@
 //String creation types  with example, concat
+//1. Using literals
+let single = 'Hello';
+let double = "World";
+let backtick = `Hello World`;
+
+//2. String Constructor Function
+let numString = String(42); // "42"
+let boolString = String(true); // "true"
+
+//3. String Object (new String())
+let objString = new String("Hello");
+console.log(typeof objString); // "object"
+
+//String concatenation
+let firstName = "hello";
+let lastName = "world!!";
+let fullName = firstName + " " + lastName; 
+
+//Using Template Literals
+let item = "dress";
+let count = 5;
+let message = `I have ${count} ${item}es.`;
+console.log(message); // "I have 5 Apples."
 
 //charAt() Returns the character at a specific index.
 //-------------------------------------------------------------
@@ -15,9 +38,8 @@ console.log(str2.charCodeAt(1)); // 101
 //toUpperCase() Converts a string to uppercase.
 //-------------------------------------------------------------
 let str3 = "hello world";
-
 let result1 = str3.toUpperCase();
-console.log(result); // HELLO WORLD
+console.log(result1); // HELLO WORLD
 
 //toLowerCase() Converts a string to lowercase.
 //-------------------------------------------------------------
@@ -84,11 +106,11 @@ console.log(str12.trim());
 //trimStart() Removes whitespace from the beginning only.
 //-------------------------------------------------------------
 let str13 = "   Hello World   ";
-console.log(str.trimStart());
+console.log(str13.trimStart());
 // "Hello World   "
 
 //trimEnd() Removes whitespace from the end only.
 //-------------------------------------------------------------
 let str14 = "   Hello World   ";
-console.log(str.trimEnd());
+console.log(str14.trimEnd());
 // "   Hello World"

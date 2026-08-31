@@ -89,4 +89,18 @@ rl.question("Enter numbers separated by comma: ", function(input) {
     rl.close();
 });
 
-//new array
+//Creating array using new key word
+let emptyArray = new Array(3);
+console.log(emptyArray);        // [empty × 3]
+console.log(emptyArray.length); // 3
+
+let numbers = new Array(1, 2, 3); 
+console.log(numbers); // [1, 2, 3]
+
+// Multiple strings
+let fruits = new Array("Apple", "Banana"); 
+console.log(fruits); // ["Apple", "Banana"]
+
+// Single non-number argument
+let singleString = new Array("Hello"); 
+console.log(singleString); // ["Hello"]
