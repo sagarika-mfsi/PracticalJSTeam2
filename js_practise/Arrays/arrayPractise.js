@@ -64,14 +64,14 @@ console.log(f1.at(-2)); // Mango
 console.log(f1.at(-3)); // Banana
 
 // Take name input
-let userName = prompt("What is your name?");
+//let userName = prompt("What is your name?");
 
 // Check if the user didn't press cancel
-if (userName !== null) {
+/*if (userName !== null) {
     console.log("Hello, " + userName + "! Welcome to JavaScript.");
 } else {
     console.log("You canceled the prompt.");
-}
+}*/
 
 const readline = require("readline");
  
@@ -94,12 +94,12 @@ let emptyArray = new Array(3);
 console.log(emptyArray);        // [empty × 3]
 console.log(emptyArray.length); // 3
 
-let numbers = new Array(1, 2, 3); 
-console.log(numbers); // [1, 2, 3]
+let n1 = new Array(1, 2, 3); 
+console.log(n1); // [1, 2, 3]
 
 // Multiple strings
-let fruits = new Array("Apple", "Banana"); 
-console.log(fruits); // ["Apple", "Banana"]
+let f = new Array("Apple", "Banana"); 
+console.log(f); // ["Apple", "Banana"]
 
 // Single non-number argument
 let singleString = new Array("Hello"); 
