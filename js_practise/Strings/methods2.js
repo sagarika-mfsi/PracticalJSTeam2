@@ -48,13 +48,11 @@ if (username.toLowerCase() === input.toLowerCase()) {
 
 let str11 = "Hello";
 let str12 = "hello";
-
 console.log(
     str11.localeCompare(str12, undefined, { sensitivity: "base" })
 ); //0
 
 /*Here, sensitivity: "base" means uppercase and lowercase differences are ignored.*/
-
 //5. Replacing Substrings using replace()
 //The replace() method is used to replace part of a string.
 
