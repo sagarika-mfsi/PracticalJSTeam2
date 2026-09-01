@@ -44,7 +44,17 @@ let student4 = {
 console.log(student4.address.city); //Bhubaneswar
 console.log(student4["address"]["state"]); //Odisha
 
-
-
-
+//array inside object
+const userProfile = {
+  name: "Sagarika",
+  age: 26,
+  hobbies: ["reading", "gaming", "hiking"] // Array inside the object
+};
+console.log(userProfile.hobbies);
+console.log(userProfile.hobbies[2]);
+userProfile.hobbies.push("cooking");
+console.log(userProfile.hobbies);
+userProfile.hobbies.forEach((val) => {
+  console.log(val);
+});
 

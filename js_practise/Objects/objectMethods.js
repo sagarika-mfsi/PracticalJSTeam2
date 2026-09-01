@@ -122,7 +122,7 @@ console.log(Object.is(10, 10)); //true
 console.log(Object.is(10, "10")); //false
 
 //Object.hasOwn() → Is this property directly inside this object?
-//in → Is this property available on the object, either directly or through its prototype?
+//Object.is() → Is this property available on the object, either directly or through its prototype?
 
 //10. Object.fromEntries()
 //Converts key-value pairs into an object.
