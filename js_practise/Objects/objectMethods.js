@@ -50,8 +50,24 @@ let obj1 = {
 let obj2 = {
     age: 26
 };
-let result = Object.assign({}, obj1, obj2);
+let result = Object.assign({}, obj1, obj2); //Object.assign(target, source1, source2, ...)
 console.log(result); //{ name: "Sagarika", age: 26 }
+let obj11 = {
+  name: "Sagarika"
+};
+
+let obj12 = {
+  name: "Test"
+};
+
+let result1 = Object.assign({}, obj11, obj12);
+
+console.log(result);
+
+/*{
+  name: "Test"
+}*/
+//when properties have the same name, the later object overwrites the earlier value.
 
 //5. Object.create()
 //Creates a new object using another object as its prototype.
@@ -61,7 +77,6 @@ let p1 = {
         console.log("Hello");
     }
 };
-
 let student = Object.create(p1);
 student.greet(); //Hello
 
@@ -98,14 +113,16 @@ let user3 = {
     age: 26
 };
 
-console.log(Object.hasOwn(user3, "name")); //true
+console.log(Object.hasOwn(user3, "name")); //true //Object.hasOwn(object, property)
 console.log(Object.hasOwn(user3, "city")); //false
 
 //9. Object.is()
 //Checks whether two values are the same.
-//It is similar to ===, with some differences involving values such as NaN and -0.
 console.log(Object.is(10, 10)); //true
 console.log(Object.is(10, "10")); //false
+
+//Object.hasOwn() → Is this property directly inside this object?
+//in → Is this property available on the object, either directly or through its prototype?
 
 //10. Object.fromEntries()
 //Converts key-value pairs into an object.
@@ -117,3 +134,13 @@ let entries = [
 
 let s1 = Object.fromEntries(entries);
 console.log(s1); //{ name: "Sagarika", age: 26 }
+
+/*
+Object.entries()
+       ↓
+Object → Entries
+
+
+Object.fromEntries()
+       ↓
+Entries → Object*/
