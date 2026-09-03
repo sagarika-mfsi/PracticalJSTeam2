@@ -5,10 +5,8 @@ function outer() {
         console.log(count);
     };
 }
-
 let a = outer(); 
 let b = outer();
-
 a(); //1
 a(); //2
 b(); //1
@@ -33,12 +31,12 @@ console.log(counter.increment()); // 2
 console.log(counter.decrement()); // 1
 console.log(counter.increment()); // 2
 
-
+//-------------------------------------------
 function multiplyBy(n) {
     return function (num) {
         return num * n;
     };
 }
-let multiplyBy5 = multiplyBy(5);
-console.log(multiplyBy5(10)); // 50
+let multiplyBy5 = multiplyBy(5); //fix value 5
+console.log(multiplyBy5(10)); // 50 // it will add with 5 whatever argument we have passed
 console.log(multiplyBy5(7));  // 35

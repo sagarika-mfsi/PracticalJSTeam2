@@ -1,13 +1,11 @@
-// /*Hoisting with var
+/*Hoisting with var
 // With var, the declaration is hoisted, but the initialization is not.*/
-// /*console.log(a);
-// var a = 10; //undefined
-// //here it works like:
-// /*var a;
-
-// console.log(a);
-
-// a = 10;*/
+console.log(a);
+var a = 10; //undefined
+//here it works like:
+/*var a;
+ a = 10;*/
+ console.log(a);
 // /*Declaration → Hoisted
 // Initialization → Not Hoisted*/
 
