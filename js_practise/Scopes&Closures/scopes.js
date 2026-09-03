@@ -265,7 +265,7 @@ function getUser() {
 }
 let user = getUser();
 console.log(user.name); // Sagarika
-console.log(user.greet);
+console.log(user.greet); //function
 user.greet();           // Hello!
 
 //Arrow function returning an object
