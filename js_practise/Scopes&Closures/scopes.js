@@ -185,9 +185,9 @@ outer();
 var a = 10;
 function outer() {
     function inner() {
-        console.log(a); //10
+        console.log(a); //20 because 1st it will search inside itself then outer then global
     }
-    var a = 20; //????-----------------------------------------------
+    var a = 20; 
     inner();
 }
 outer();
@@ -209,6 +209,7 @@ for (var i = 1; i <= 3; i++) {
         console.log(i); //4, 4, 4---?-------------------
     }, 1000);
 }
+//var inside for loop
 
 //------------------------------
 for (let i = 1; i <= 3; i++) {
@@ -231,7 +232,7 @@ outer();
 //--------------------------
 var x7 = 1;
 function test() {
-    console.log(x7); //undefined?
+    console.log(x7); //undefined
     if (true) {
         var x7 = 2;
         let y = 3;
@@ -241,4 +242,47 @@ function test() {
     console.log(x7); //2
 }
 test();
-console.log(x7); //1?
+console.log(x7); //1
+
+//func returning obj
+function createUser(name, age) {
+    return {
+        name: name,
+        age: age
+    };
+}
+let user1 = createUser("Sagarika", 26);
+console.log(user1);
+
+//returning an object which holds one function
+function getUser() {
+    return {
+        name: "Sagarika",
+        greet: function() {
+            console.log("Hello!"); 
+        }
+    };
+}
+let user = getUser();
+console.log(user.name); // Sagarika
+console.log(user.greet);
+user.greet();           // Hello!
+
+//Arrow function returning an object
+/*error
+let getUser = () => {
+    name: "Sagarika",
+    age: 26
+};*/
+let getUser = () => (
+    {  name1: "Sagarika",
+       age1: 26
+    }
+)
+//or explicit return
+let getUser = () => {
+    return{
+        name: "Sagarika",
+        age: 26
+    }
+};

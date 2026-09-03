@@ -132,7 +132,7 @@ ABCDE*/
 for(let i=1;i<=5;i++){
     let pattern9 = "";
     for(let j=1;j<=i;j++){
-        pattern9+=String.fromCharCode(64 + j);
+        pattern9+=String.fromCharCode(64 + j); //a:97
     }
     //console.log(pattern9);
 }
@@ -163,4 +163,63 @@ for(let i=5;i>=1;i--){
         pattern11+=String.fromCharCode(64 + j);
     }
     console.log(pattern11);
+}
+/*
+*
+**
+* *
+*  *
+*****
+*/
+for(let i=1;i<=5;i++){
+    let pattern12 = "";
+    for(let j=1;j<=i;j++){
+        if (j === 1 || j === i || i === 5) {
+            pattern12 += "*";
+        } else {
+            pattern12 += " ";
+        }
+    }
+    console.log(pattern12);
+}
+
+/*
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
+*/
+let n = 5;
+
+// Upper half
+for (let i = 1; i <= n; i++) {
+    let str = "";
+    // spaces
+    for (let j = 1; j <= n - i; j++) {
+        str += " ";
+    }
+    // stars
+    for (let j = 1; j <= 2 * i - 1; j++) {
+        str += "*";
+    }
+    console.log(str);
+}
+
+// Lower half
+for (let i = n - 1; i >= 1; i--) {
+    let str = "";
+    // spaces
+    for (let j = 1; j <= n - i; j++) {
+        str += " ";
+    }
+    // stars
+    for (let j = 1; j <= 2 * i - 1; j++) {
+        str += "*";
+    }
+    console.log(str);
 }
