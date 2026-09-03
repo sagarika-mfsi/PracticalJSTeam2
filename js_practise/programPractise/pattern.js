@@ -184,6 +184,30 @@ for(let i=1;i<=5;i++){
 }
 
 /*
+*****
+*   *
+*   *
+*   *
+*****
+*/
+function createHollowSquare(size) {
+    for (let i = 1; i <= size; i++) {
+        let row = "";
+        for (let j = 1; j <= size; j++) {
+            // Check if the current position is on any of the four borders
+            if (i === 1 || i === size || j === 1 || j === size) {
+                row += "*";
+            } else {
+                row += " ";
+            }
+        }
+        console.log(row);
+    }
+}
+// Generate a 5x5 hollow square
+createHollowSquare(5);
+
+/*
     *
    ***
   *****
