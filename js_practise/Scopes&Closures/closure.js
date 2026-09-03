@@ -40,3 +40,33 @@ function multiplyBy(n) {
 let multiplyBy5 = multiplyBy(5); //fix value 5
 console.log(multiplyBy5(10)); // 50 // it will add with 5 whatever argument we have passed
 console.log(multiplyBy5(7));  // 35
+
+//NOTE:
+/*Rule #1
+Inner function remembers variable of outer function even after that outer scope has finished execution.*/
+
+function createTestData(role) {
+
+    return function (username) {
+
+        return {
+            username: username,
+            role: role
+        };
+    };
+}
+
+let adminData = createTestData("admin");
+
+console.log(adminData("sagarika")); //{ username: 'sagarika', role: 'admin' }
+console.log(adminData("testA")); //{ username: 'testA', role: 'admin' }
+
+/*
+Function
+   +
+Lexical Environment
+   +
+Function remembers/accesses that environment
+   =
+Closure
+*/
