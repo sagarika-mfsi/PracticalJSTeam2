@@ -37,9 +37,10 @@ function multiplyBy(n) {
         return num * n;
     };
 }
-let multiplyBy5 = multiplyBy(5); //fix value 5
-console.log(multiplyBy5(10)); // 50 // it will add with 5 whatever argument we have passed
-console.log(multiplyBy5(7));  // 35
+let res = multiplyBy(5); //fix value 5
+res = multiplyBy(4);
+console.log(res(10)); // 50 // it will add with 5 whatever argument we have passed
+console.log(res(7));  // 35
 
 //NOTE:
 /*Rule #1
