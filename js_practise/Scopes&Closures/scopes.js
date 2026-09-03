@@ -1,6 +1,6 @@
 var a = 10;
 function test() {
-    var a = 20; 
+    var a = 20;
     console.log(a); //20
 }
 test(); //20
@@ -38,7 +38,7 @@ console.log(x2); //10
 
 if (true) {
     var a = 10;
-    let b1 = 20; 
+    let b1 = 20;
 }
 console.log(a); //10
 console.log(b1); //reference error ( not accessible outside the block as it is block scoped)
@@ -179,7 +179,7 @@ function outer() {
     }
     inner();
 }
-outer(); 
+outer();
 
 //--------------------------
 var a = 10;
@@ -187,7 +187,7 @@ function outer() {
     function inner() {
         console.log(a); //20 because 1st it will search inside itself then outer then global
     }
-    var a = 20; 
+    var a = 20;
     inner();
 }
 outer();
@@ -258,8 +258,8 @@ console.log(user1);
 function getUser() {
     return {
         name: "Sagarika",
-        greet: function() {
-            console.log("Hello!"); 
+        greet: function () {
+            console.log("Hello!");
         }
     };
 }
@@ -275,13 +275,14 @@ let getUser = () => {
     age: 26
 };*/
 let getUser = () => (
-    {  name1: "Sagarika",
-       age1: 26
+    {
+        name1: "Sagarika",
+        age1: 26
     }
 )
 //or explicit return
 let getUser = () => {
-    return{
+    return {
         name: "Sagarika",
         age: 26
     }

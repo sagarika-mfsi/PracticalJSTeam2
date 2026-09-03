@@ -6,10 +6,10 @@
 * * * * *
 --*/
 
-for(let i=1;i<=5;i++){
-    let pattern1="";
-for(let j=1;j<=i;j++){
-    pattern1+="* ";
+for (let i = 1; i <= 5; i++) {
+    let pattern1 = "";
+    for (let j = 1; j <= i; j++) {
+        pattern1 += "* ";
     }
     //console.log(pattern1);
 }
@@ -20,10 +20,10 @@ for(let j=1;j<=i;j++){
 **
 *
 --*/
-for(let i=1;i<=5;i++){
+for (let i = 1; i <= 5; i++) {
     let pattern2 = "";
-    for(let j=5;j>=i;j--){
-        pattern2+="*";
+    for (let j = 5; j >= i; j--) {
+        pattern2 += "*";
     }
     //console.log(pattern2);
 }
@@ -35,10 +35,10 @@ for(let i=1;i<=5;i++){
 1234
 12345
 */
-for(let i=1;i<=5;i++){
+for (let i = 1; i <= 5; i++) {
     let pattern3 = "";
-    for(let j=1;j<=i;j++){
-        pattern3+=j;
+    for (let j = 1; j <= i; j++) {
+        pattern3 += j;
     }
     //console.log(pattern3);
 }
@@ -50,10 +50,10 @@ for(let i=1;i<=5;i++){
 4444
 55555
 */
-for(let i=1;i<=5;i++){
+for (let i = 1; i <= 5; i++) {
     let pattern4 = "";
-    for(let j=1;j<=i;j++){
-        pattern4+=i;
+    for (let j = 1; j <= i; j++) {
+        pattern4 += i;
     }
     //console.log(pattern4);
 }
@@ -65,10 +65,10 @@ for(let i=1;i<=5;i++){
 12
 1
 */
-for(let i=5;i>=1;i--){
+for (let i = 5; i >= 1; i--) {
     let pattern5 = "";
-    for(let j=1;j<=i;j++){
-        pattern5+=j;
+    for (let j = 1; j <= i; j++) {
+        pattern5 += j;
     }
     //console.log(pattern5);
 }
@@ -79,10 +79,10 @@ for(let i=5;i>=1;i--){
 543
 54
 5*/
-for(let i=1;i<=5;i++){
+for (let i = 1; i <= 5; i++) {
     let pattern6 = "";
-    for(let j=5;j>=i;j--){
-        pattern6+=j;
+    for (let j = 5; j >= i; j--) {
+        pattern6 += j;
     }
     //console.log(pattern6);
 }
@@ -94,13 +94,13 @@ for(let i=1;i<=5;i++){
  ****
 *****
 */
-for(let i=1;i<=5;i++){
+for (let i = 1; i <= 5; i++) {
     let pattern7 = "";
-    for(let j=4;j>=i;j--){
-        pattern7+=" ";
+    for (let j = 4; j >= i; j--) {
+        pattern7 += " ";
     }
-    for(let k=1;k<=i;k++){
-        pattern7+="*";
+    for (let k = 1; k <= i; k++) {
+        pattern7 += "*";
     }
     //console.log(pattern7);
 }
@@ -112,13 +112,13 @@ for(let i=1;i<=5;i++){
    **
     *
 */
-for(let i=1;i<=5;i++){
+for (let i = 1; i <= 5; i++) {
     let pattern8 = "";
-    for(let k=1;k<i;k++){
-        pattern8+=" ";
+    for (let k = 1; k < i; k++) {
+        pattern8 += " ";
     }
-    for(let j=5;j>=i;j--){
-        pattern8+="*";
+    for (let j = 5; j >= i; j--) {
+        pattern8 += "*";
     }
     //console.log(pattern8);
 }
@@ -129,10 +129,10 @@ AB
 ABC
 ABCD
 ABCDE*/
-for(let i=1;i<=5;i++){
+for (let i = 1; i <= 5; i++) {
     let pattern9 = "";
-    for(let j=1;j<=i;j++){
-        pattern9+=String.fromCharCode(64 + j); //a:97
+    for (let j = 1; j <= i; j++) {
+        pattern9 += String.fromCharCode(64 + j); //a:97
     }
     //console.log(pattern9);
 }
@@ -143,10 +143,10 @@ BB
 CCC
 DDDD
 EEEEE*/
-for(let i=1;i<=5;i++){
+for (let i = 1; i <= 5; i++) {
     let pattern10 = "";
-    for(let j=1;j<=i;j++){
-        pattern10+=String.fromCharCode(64 + i);
+    for (let j = 1; j <= i; j++) {
+        pattern10 += String.fromCharCode(64 + i);
     }
     //console.log(pattern10);
 }
@@ -157,10 +157,10 @@ ABCD
 ABC
 AB
 A*/
-for(let i=5;i>=1;i--){
+for (let i = 5; i >= 1; i--) {
     let pattern11 = "";
-    for(let j=1;j<=i;j++){
-        pattern11+=String.fromCharCode(64 + j);
+    for (let j = 1; j <= i; j++) {
+        pattern11 += String.fromCharCode(64 + j);
     }
     console.log(pattern11);
 }
@@ -171,9 +171,9 @@ for(let i=5;i>=1;i--){
 *  *
 *****
 */
-for(let i=1;i<=5;i++){
+for (let i = 1; i <= 5; i++) {
     let pattern12 = "";
-    for(let j=1;j<=i;j++){
+    for (let j = 1; j <= i; j++) {
         if (j === 1 || j === i || i === 5) {
             pattern12 += "*";
         } else {

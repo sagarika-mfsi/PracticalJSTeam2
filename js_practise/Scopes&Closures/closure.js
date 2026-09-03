@@ -1,11 +1,11 @@
 function outer() {
     let count = 0;
-    return function() {
+    return function () {
         count++;
         console.log(count);
     };
 }
-let a = outer(); 
+let a = outer();
 let b = outer();
 a(); //1
 a(); //2
@@ -14,16 +14,16 @@ a(); //3
 b(); //2
 
 //Create a function that maintains a private number and returns two functions:
-function f1(){
+function f1() {
     let n1 = 0;
-    return{
-        increment(){
-          return ++n1;
-            } ,
-        decrement(){
+    return {
+        increment() {
+            return ++n1;
+        },
+        decrement() {
             return --n1;
         }
-    }  
+    }
 }
 let counter = f1();
 console.log(counter.increment()); // 1
