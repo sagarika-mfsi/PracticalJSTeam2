@@ -287,3 +287,11 @@ let getUser = () => {
         age: 26
     }
 };
+
+
+let a =12;
+function f1(){
+    console.log(a);
+    
+}
+f1();
