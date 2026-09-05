@@ -264,6 +264,7 @@ function getUser() {
     };
 }
 let user = getUser();
+console.log(user);
 console.log(user.name); // Sagarika
 console.log(user.greet); //function
 user.greet();           // Hello!
@@ -295,3 +296,4 @@ function f1(){
     
 }
 f1();
+

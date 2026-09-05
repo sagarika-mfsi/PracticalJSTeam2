@@ -74,7 +74,7 @@ try {
     console.log(x);
 }
 catch (err) {
-    throw new Error("you are doing wrong!!")
+    throw new Error("you are doing wrong!!")//----------------------------
 }
 
 //Example:02
@@ -188,5 +188,5 @@ try {
 }
 catch (error) {
     console.log(error.message);
-    throw error;
+    throw error;//---------------------------
 }
