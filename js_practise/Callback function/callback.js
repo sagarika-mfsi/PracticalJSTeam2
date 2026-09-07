@@ -132,9 +132,9 @@ function task2(callback){
 }
 
 task1(
-    function() {
+    function() { //callback for task1 which takes task2 as its callback
     task2(
-        function() {
+        function() { //callback for task2 
         console.log("Task 3 completed");
     });
 });
