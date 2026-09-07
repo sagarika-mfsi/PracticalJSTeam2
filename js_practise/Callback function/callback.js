@@ -5,13 +5,14 @@
 function welcome() {
     console.log("Good morning!!");
 }
+
 function greet(callback) {
     callback();
 }
 greet(welcome);
 
 
-//Example:02 Callback taking parameter
+//Example:02 Callback with multiple parameters
 //-----------------------------------
 function add(a, b) { //this is my callback func
     console.log(a + b);
@@ -41,47 +42,89 @@ test2(() => console.log("heyy i am a callback arrow function"));
 //-----------------------------------------
 console.log("Start");
 setTimeout(function () {
-    console.log("Inside timeout");
+    console.log("Inside timeout"); // After the timeout provided, the code got executed 
 }, 2000);
 console.log("End");
 
-//Example:06 Callbacks in Array Methods
+//Example:06 Callback with setInterval
+//-------------------------------------
+setInterval(function () {
+    console.log("Inside timeout"); //execute code repeatedly in a certain interval of time
+}, 1000);
+
+//Example:7 Synchronous Callback: Executed line by line in a manner
+//-------------------------------
+function execute(callback) {
+    console.log("A"); //A
+    callback(); //Callback
+    console.log("B"); //B
+}
+execute(function () {
+    console.log("Callback");
+});
+
+//Example: 08
+//----------
+function add() {
+    return 10 + 20;
+}
+
+function execute(callback) {
+    console.log(callback());
+}
+
+execute(add()); //TypeError: callback is not a function
+//because here the add() will get executed and the return value i.e 30 will pass as an argument to execute()
+//so the correct way of callback is execute(add); only the function name
+
+
+//Example:09 Callbacks in Array Methods
 //-----------------------------------------
+let myArr = [2, 4, 6, 8];
+//1. forEach
+myArr.forEach(
+    function f1(num) {  //here function f1 is a callback function
+        console.log(num);
+    }
+)
+
+//Example:10 Callback returning a value
+//----------------------------------------
+function a(a, b, callback) {
+    let result = a + b;
+    callback(result);
+}
+function callback(res) {
+    console.log("sum of two numbers is: ", res);
+}
+console.log(a(20, 10, callback));
 
 
+//Example:11 Callback can be conditional
+//----------------------------------------
+let age = 10; let isEligibleToVote = false;
+function canVote(age, callback) {
+    if (age >= 18) {
+        isEligibleToVote = true;
+        callback(isEligibleToVote);
+    }
+    else {
+        console.log("can not vote!!");
+    }
+}
+function callback(isEligibleToVote) {
+    if (isEligibleToVote) {
+        console.log("The person is eligible for voting!!");
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+let votingResult = canVote(age, callback);
+console.log(votingResult);
 
 
 /*
+Note:
+-------------------------------------------------------
 1. Function can be stored in a variable ex: let res = add;
                 ↓
 2. Function can be passed as an argument ex:add(test)
