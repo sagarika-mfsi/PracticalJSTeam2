@@ -1,3 +1,8 @@
+/*
+------------------Note:------------------
+Promise have 3 stages: pending -> fullfilled / rejected
+*/
+
 let promise = new Promise((resolve, reject) => {
     let loginSuccess = true;
     if (loginSuccess) {
