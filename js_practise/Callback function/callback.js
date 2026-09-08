@@ -121,7 +121,8 @@ function callback(isEligibleToVote) {
 let votingResult = canVote(age, callback);
 console.log(votingResult);
 
-//nested callback add
+//nested callback(Callback Hell)
+//---------------------------------
 function task1(callback){
     console.log("task 1");
     callback();
