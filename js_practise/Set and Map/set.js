@@ -1,6 +1,7 @@
 /*
 1. Set stores only unique values and automatically it ignores the duplicate values
 2. Useful to remove duplicate values
+3. It preserves the order in which values were inserted.
 */
 
 //Creating set(empty set)
