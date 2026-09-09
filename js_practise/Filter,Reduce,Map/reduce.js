@@ -57,7 +57,7 @@ let result = myNum.reduce((acc, current, index, arr) => {
     console.log(current);
     console.log(index);
     console.log(arr);
-    
+
     return acc + current;
 
 }, 0);

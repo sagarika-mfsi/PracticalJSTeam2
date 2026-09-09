@@ -52,15 +52,15 @@ Filter and find:
 filter → all matching elements
 find   → first matching element*/
 let colors = ["red", "orange", "blue", "green", "blue"];
-let findColorBlue = colors.find(val=>val==="blue");
-console.log(colors.filter(val=>val==="blue")); //[ 'blue', 'blue' ]
+let findColorBlue = colors.find(val => val === "blue");
+console.log(colors.filter(val => val === "blue")); //[ 'blue', 'blue' ]
 console.log(findColorBlue); //blue(1st one)
 
 //filter() callback arguments
 let res1 = colors.filter(
-    (element, index, array)=>{
-        console.log(element,index,array); 
-    }      
+    (element, index, array) => {
+        console.log(element, index, array);
+    }
 )
 console.log(res1);
 
