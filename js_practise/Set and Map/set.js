@@ -81,7 +81,7 @@ console.log(set7[1]); //undefined
 
 //Converting Set → Array
 let set8 = new Set(["A", "B", "C"]);
-let myArr = [...set8]; //using rest operator
+let myArr = [...set8]; //using spread operator
 console.log(set8); //Set(3) { 'A', 'B', 'C' }
 console.log(myArr); //[ 'A', 'B', 'C' ]
 
