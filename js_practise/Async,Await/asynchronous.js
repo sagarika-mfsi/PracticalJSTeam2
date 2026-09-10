@@ -73,3 +73,13 @@ const test1 = async () => {
 };
 
 test1();
+
+
+async function f10(a,b){
+ let result = a+b;
+ console.log(result);
+ 
+}
+f10(1,2);
+   
+    

@@ -54,3 +54,5 @@ let users = testUsers();
 console.log(users.next().value);
 console.log(users.next().value);
 console.log(users.next().value);
+
+//add 2-3 more examples using array, function
