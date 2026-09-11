@@ -1,7 +1,7 @@
 /*
 Encapsulation means:
-
 Combining data and methods together and controlling access to the data.*/
+
 class BankAccount {
 
     constructor(balance) {
@@ -97,7 +97,7 @@ class Employee {
         return this.name;
     }
 
-    set employeeName(newName) {
+    set employeeNewName(newName) {
 
         if (newName.length < 3) {
             console.log("Name is too short");
@@ -110,8 +110,8 @@ class Employee {
 
 let emp2 = new Employee("Sagarika");
 
-console.log(emp2.employeeName);
+console.log(emp2.employeeName); //Sagarika
 
-emp2.employeeName = "Rahul";
+emp2.employeeNewName = "Rahul"; //setting new name
 
-console.log(emp2.employeeName);
+console.log(emp2.employeeName); //again calling getter Rahul
