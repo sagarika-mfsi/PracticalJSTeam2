@@ -8,8 +8,13 @@ Points to remember:
    It pauses the current async function, while other JavaScript work can continue.
 */
 
+async function f0(){
+ return 10; //bydefault promise.resolve(10)
+}
+console.log(f0());
+
 async function test() {
-    let result = await Promise.resolve("Hello"); //here if we remove await then it will give the promise itself, using await will give the result of the promise like in then
+    let result = await  Promise.resolve("Hello"); //here if we remove await then it will give the promise itself, using await will give the result of the promise like in then
     console.log(result);
 }
 test();
