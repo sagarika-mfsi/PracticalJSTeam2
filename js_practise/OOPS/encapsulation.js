@@ -52,7 +52,6 @@ let login = new Login();
 login.login();
 //login.#validateCredentials(); error
 
-
 //Getters : A getter allows us to access a method like a property.
 class Employee {
 
@@ -97,21 +96,21 @@ class Employee {
         return this.name;
     }
 
-    set employeeNewName(newName) {
+    set employeeName(newName) {
 
         if (newName.length < 3) {
             console.log("Name is too short");
             return;
         }
-
         this.name = newName;
     }
 }
 
 let emp2 = new Employee("Sagarika");
 
-console.log(emp2.employeeName); //Sagarika
+console.log(emp2.employeeName); //Sagarika JavaScript sees you're reading employeeName, so it calls: get employeeName()
 
-emp2.employeeNewName = "Rahul"; //setting new name
+emp2.employeeName = "Ra"; // Name is too short 
+//JavaScript sees you're assigning/changing employeeName, so it calls: set employeeName(newName)
 
-console.log(emp2.employeeName); //again calling getter Rahul
+console.log(emp2.employeeName); //Sagarika  because updating value is not set //again calling getter get employeeName() 
