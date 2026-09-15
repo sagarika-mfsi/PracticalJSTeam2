@@ -8,6 +8,8 @@ let user2 = new classA();
 //Constructor
 /*A constructor is a special method inside a class.
 It runs automatically when we create an object.*/
+
+//Constructor with no parameter
 class classA {
     constructor() {
         console.log("i am a constructor");
@@ -30,6 +32,7 @@ let user5 = new classA("test","lead");
 console.log(user4.name);
 console.log(user5.name);
 
+//EXAMPLE:01
 class User{
     constructor(name){
         this.name=name;
@@ -48,13 +51,11 @@ userA.login(); userA.logout();
 class LoginPage {
 
     constructor(username, password) {
-
         this.username = username;
         this.password = password;
     }
 
     login() {
-
         console.log("Username:", this.username);
         console.log("Password:", this.password);
         console.log("Login successful");
@@ -62,5 +63,4 @@ class LoginPage {
 }
 
 let user = new LoginPage("admin", "admin123");
-
 user.login();
