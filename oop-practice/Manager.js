@@ -1,7 +1,7 @@
-import { Employee } from "./Employee.js";
+import { Employee } from "../oop-practice/Employee";
 
 export class Manager extends Employee {
-    
+
     constructor(name, age, salary, employeeID, department, teamSize) { //overridden parent class constructor
         super(name, age, salary, employeeID, department);
         this.teamSize = teamSize;
@@ -10,6 +10,7 @@ export class Manager extends Employee {
     display() { //overridden parent class method
         super.display();
         console.log(`Team size: ${this.teamSize}`);
+        
     }
 
     calculateBonus() { //overriddedn parent class method
