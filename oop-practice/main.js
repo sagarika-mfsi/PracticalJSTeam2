@@ -3,13 +3,13 @@ import { Manager } from "./Manager.js";
 import { Developer } from "./Developer.js";
 
 //Employee class object
-let emp1 = new Employee("Rahul", 25, 50000, "EMP101","Testing");
+let emp1 = new Employee("Employee1", 25, 50000, "EMP101","Testing");
 
 //Manager class object
-let manager1 = new Manager("Priya", 35, 100000,"MGR101", "Testing", 5);
+let manager1 = new Manager("Manager1", 35, 100000,"MGR101", "Testing", 5);
 
 //Developer class Object
-let developer1 = new Developer("Amit", 27, 80000, "DEV101", "Development");
+let developer1 = new Developer("Developer1", 27, 80000, "DEV101", "Development");
 
 console.log("----- EMPLOYEE -----");
 emp1.display();
