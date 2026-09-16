@@ -123,3 +123,47 @@ console.log(result.next().value);
 console.log(result.next().value);
 console.log(result.next().value);
 console.log(result.next().value);
+
+
+
+//Generating dummy data using Generator
+function* testDataGenerator() {
+    let id = 1001;
+
+    while (true) {
+        yield {
+            userId: id,
+            firstName: `User${id}`,
+            lastName: `Test`,
+            email: `user${id}@test.com`,
+            password: `Test@${id}123`,
+            country: "India"
+        };
+
+        id++;
+    }
+}
+
+const data = testDataGenerator();
+
+console.log(data.next().value);
+console.log(data.next().value);
+console.log(data.next().value);
+
+//Using loop
+function* testUsers() {
+    let id = 1001;
+    while (true) {
+        yield {
+            username: `testuser${id}`,
+            email: `testuser${id}@test.com`
+        };
+        id++;
+    }
+}
+const myUsers = testUsers();
+for (let i = 0; i < 5; i++) {
+    const user = myUsers.next().value;
+
+    console.log(user);
+}
