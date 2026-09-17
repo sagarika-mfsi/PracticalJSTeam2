@@ -36,3 +36,5 @@ NOTE:
 nth-child() counts all element types.
 nth-of-type() counts only that element type.
 */
+
+//nth-child vs nth-of-type
