@@ -14,7 +14,7 @@ async function f0(){
 console.log(f0());
 
 async function test() {
-    let result = await  Promise.resolve("Hello"); //here if we remove await then it will give the promise itself, using await will give the result of the promise like in then
+    let result = await Promise.resolve("Hello"); //here if we remove await then it will give the promise itself, using await will give the result of the promise like in then
     console.log(result);
 }
 test();
@@ -51,7 +51,7 @@ function step2() {
 
 async function test() {
 
-    let result1 = await step1();
+    let result1 =  await step1();
     console.log(result1); //Step 1 completed
 
     let result2 = await step2();

@@ -97,7 +97,6 @@ const readline = require("readline");
 rl.question("Enter numbers separated by comma: ", function(input) {
  
     let arr = input.split(",").map(Number);
- 
     console.log("my created Array is:", arr);
  
     rl.close();
