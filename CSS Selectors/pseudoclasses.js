@@ -44,9 +44,9 @@ nth-of-type → count only my type
 Example: 
 <div>
     <p>Paragraph 1</p>
+    <input>paragraph 2</p>
     <input type="text">
-    <p>Paragraph 2</p>
-    <input type="text">
+    <p>Pt type="text">
     <p>Paragraph 3</p>
 </div>
 */
