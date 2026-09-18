@@ -6,7 +6,7 @@ a. :first-of-type : Select the first element of that particular type among its s
 =================
 Syntax: element:first-of-type
 ELEMENT: Header delivery in 10 mins button
-ex: .sc-jdkBTo:first-of-type-------??????? 
+ex: .sc-jdkBTo:first-of-type-------???????
 
 note:
 :first-child - first child regardless of tag
@@ -32,9 +32,23 @@ d. nth-child(no)
 =================
 a:nth-child(2)
 
-NOTE: 
-nth-child() counts all element types.
-nth-of-type() counts only that element type.
+NOTE:
+nth-child() counts among all child elements of a parent.
+nth-of-type() selects an element based on its position among siblings of the same HTML tag type.
+
+nth-child → count everyone
+nth-of-type → count only my type
 */
 
-//nth-child vs nth-of-type
+/*
+Example: 
+<div>
+    <p>Paragraph 1</p>
+    <input type="text">
+    <p>Paragraph 2</p>
+    <input type="text">
+    <p>Paragraph 3</p>
+</div>
+*/
+input:nth-child(2) //input that is the 2nd child of its parent.
+input:nth-of-type(2) //2nd <input> among the parent's <input> elements.
