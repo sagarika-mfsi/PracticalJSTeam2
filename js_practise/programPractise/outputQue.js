@@ -139,3 +139,42 @@ const user = {
 };
 
 console.log(user.age.toUpperCase()); //Cannot read properties of undefined (reading 'toUpperCase')
+
+//que 22
+let a11 = 10;
+const b11 = "10";
+
+console.log(a11 == b11);
+console.log(a11 === b11);
+
+let x12;
+//const x123; //SyntaxError: Missing initializer in const declaration
+
+function test() {
+    console.log(a);
+    var a = 20;
+}
+
+/*it converted like:
+var a;
+console.log(a); // undefined
+a = 20;*/
+
+setTimeout(console.log("Hello"), 2000);
+
+async function test() {
+    return  "Hello"; 
+}
+
+console.log(await test()); //without await promise obj but with await hello
+
+const numbers1 = [1, 2, 3];
+
+const result = numbers1.forEach(num => num * 2);
+
+console.log(result); //undefined
+
+const numbers2 = [2, 4, 6, 8];
+
+console.log(numbers2.some(num => num % 2 !== 0)); //false
+console.log(numbers2.every(num => num % 2 === 0)); //true

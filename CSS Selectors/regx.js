@@ -65,6 +65,24 @@ console.log(/[^0-9]/.test("123")); //false
 
 console.log(/[^0-9]/.test("123A")); //true
 
-/*
-Quantifiers : Quantifiers tell Regex how many times something should occur.
+/*Order ID: ORD-12345
+Question:
+Write a Regex pattern to extract 12345.
+/\d+/
+digits → [0-9] or \d
+there are multiple digits → +
+
+
+2. User 123 | Age: 27 | City: Jaipur extract 27
+Age:\s*\d+
+                                   //\s* for space
+3. Price: ₹54999 
+Price:\d+
+
+4. Email: sagarika@gmail.com
+Extract only: sagarika
+Email:\s*\([a-z]+)
+
+5. Name: Sagarika
+Name:\s*\([A-Z][a-z]+)
 */
