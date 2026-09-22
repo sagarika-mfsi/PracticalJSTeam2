@@ -147,9 +147,12 @@ const b11 = "10";
 console.log(a11 == b11);
 console.log(a11 === b11);
 
+
+//que 23
 let x12;
 //const x123; //SyntaxError: Missing initializer in const declaration
 
+//que 24
 function test() {
     console.log(a);
     var a = 20;
@@ -162,18 +165,21 @@ a = 20;*/
 
 setTimeout(console.log("Hello"), 2000);
 
+//que 25
 async function test() {
     return  "Hello"; 
 }
 
 console.log(await test()); //without await promise obj but with await hello
 
+//que 26
 const numbers1 = [1, 2, 3];
 
 const result = numbers1.forEach(num => num * 2);
 
 console.log(result); //undefined
 
+//que 27
 const numbers2 = [2, 4, 6, 8];
 
 console.log(numbers2.some(num => num % 2 !== 0)); //false

@@ -72,3 +72,38 @@ Function remembers/accesses that environment
 Closure
 */
 
+//practise------------session
+function outer1(){
+    let c =0;
+    function inner1(){
+        c++;
+        console.log(c);
+    }
+    return inner1;
+}
+let res1 = outer1();
+res1();
+res1();
+
+//Data privacy using closure
+function createCounter() {
+
+    let count = 0;
+
+    return {
+        increment: function() {
+            count++;
+        },
+
+        getCount: function() {
+            return count;
+        }
+    };
+}
+
+let counter1 = createCounter();
+
+counter1.increment(); //1
+counter1.increment(); //2
+
+console.log(counter1.getCount());
