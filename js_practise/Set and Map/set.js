@@ -17,10 +17,14 @@ console.log(set2); //Set(6) { 'v', 'a', 'l', 'u', 'e', '1' }
 let set3 = new Set([10]);
 console.log(set3); //Set(1) { 10 }
 
+let set0 = new Set(["sag"]);
+console.log(set0); //Set(1) { 'sag' }
+
+
 //Set from an array
 let arr1 = [10, 20, 30, 40, 50]
 let set4 = new Set(arr1);
-console.log(set4);
+console.log(set4);//Set(5) { 10, 20, 30, 40, 50 }
 
 //Set Methods:--------------
 //1. add()

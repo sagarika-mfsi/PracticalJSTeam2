@@ -114,3 +114,14 @@ console.log(str13.trimStart());
 let str14 = "   Hello World   ";
 console.log(str14.trimEnd());
 // "   Hello World"
+
+//splice() modify the original array 
+//-----------------------------------
+let str15 = [10,20,30,40,50];
+console.log(str15.splice(1,4));
+console.log(str15);
+
+//splice starting inex se kitna tak chahiye 2nd index tak count karega
+//slice me 1st index will count ignores the last index
+
+console.log(Number.isNaN(56));
