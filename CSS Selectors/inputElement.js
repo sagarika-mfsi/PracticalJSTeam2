@@ -17,14 +17,13 @@ page.locator(`[data-testid="${buttonName}"]`).click();
 
 
 //Dynamic values----
-/*
+
 let name = "Sagarika";
 
 page.getByText(name);                  // direct variable
 page.getByText(`Hello ${name}`);       // template literal
 page.locator(`#${name}`);              // dynamic CSS selector
-            (`.${className}`)
+(`.${className}`)
 page.locator(`//button[text()="${name}"]`); // dynamic XPath
-getByRole("button", { name: buttonName })  --getByrole
+getByRole("button", { name: buttonName })   //getByrole
 
-*/
