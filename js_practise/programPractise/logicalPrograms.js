@@ -248,3 +248,37 @@ Find the most experienced QA employee.
 Count QA employees.*/
 
 
+//frequency of char in a string
+let str3 = "she is a girl";
+let f={};
+for(let i =0; i<str3.length;i++){
+    let ch = str3[i];
+    console.log(ch)
+    if(f[ch]){
+        f[ch]++;
+    }
+    else{
+        f[ch]=1;
+    }
+    
+}
+console.log(f)
+let obj1 ={
+    k1:"v1",
+    k2:"v2"
+}
+console.log(obj1["k1"])
+
+//factorial
+let fact=1;
+for(let n =5;n>=1;n--){
+    fact*=n;
+}
+console.log(fact);
+//approach2
+let ft=5; let resk=1;
+while(ft!==0){
+  resk*=ft;
+  ft--;
+}
+console.log(resk);
