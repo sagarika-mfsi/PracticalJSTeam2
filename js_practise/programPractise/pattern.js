@@ -207,3 +207,41 @@ function createHollowSquare(size) {
 // Generate a 5x5 hollow square
 createHollowSquare(5);
 
+/*
+----*
+---***
+--*****
+-*******
+*********
+-*******
+--*****
+---***
+----*
+*/
+let Star1 =1
+for(let i=1;i<=5;i++){
+    let str = "";
+    for(let j=4;j>=i;j--){
+        str += " "
+    }
+    // console.log(str);
+    for(let k=1;k<=Star1;k++){
+        str += "*"
+    }
+    Star1+=2
+    console.log(str);
+}
+//2nd
+let star2=7
+for(let l=1;l<=4;l++){
+    let str = "";
+    for(let m=1;m<=l;m++){
+        str += " "
+    }
+    //console.log(str);
+    for(let n=1;n<=star2;n++){
+        str += "*"
+    }
+    star2-=2;
+    console.log(str);
+}

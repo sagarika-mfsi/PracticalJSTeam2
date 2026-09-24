@@ -11,7 +11,9 @@ function p1() {
         console.log(num);//10  
         console.log(str1); //ReferenceError: str1 is not defined
     }
+
     s1();
     s2();
 }
+
 p1();

@@ -48,17 +48,19 @@ if (x > 5) {
 }
 
 //SWITCH Practise
-/*let day = 2;
+let day = 2;
 switch (day) {
     case 1:
         console.log("Monday");
     case 2:
         console.log("Tuesday");
-    case 3:
+        break;
+    case 2:
         console.log("Wednesday");
+        break;
     default:
         console.log("Invalid");
-}*/
+}
 
 //Simple ATM Program-------------------------
 let balance = 10000;

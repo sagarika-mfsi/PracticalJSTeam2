@@ -178,6 +178,17 @@ for(let i = 0;i<str2.length;i++){
 }
 console.log(vowel);
 
+//Approach2
+let str12="sagarika"; let count=0;
+for(let i =0;i<str12.length;i++){
+  if(str12[i]==='a' || str12[i]==='e'|| str12[i]==='i'|| str12[i]==='o'||str12[i]==='u' ){
+    console.log(str12[i]);
+    count++;
+  }
+}
+console.log(count);
+
+
 //que 14 Reverse an array without using reverse().
 let arr3 = [10, 20, 30]; let arrRev =[];
 for(let i = arr3.length-1; i>=0;i--){
@@ -235,4 +246,5 @@ Get only their names.
 Find total QA experience.
 Find the most experienced QA employee.
 Count QA employees.*/
+
 

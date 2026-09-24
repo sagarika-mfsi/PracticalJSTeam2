@@ -77,3 +77,11 @@ This is another reason they cannot be used as constructors.
 
 6. Arrow functions do not have their own this; they inherit this from the lexical surrounding scope.
 */
+function outer() {
+    console.log(this);  // regular function has its own this
+
+    const inner = () => {
+        console.log(this); // arrow inherits outer's this
+    };
+}
+outer();
