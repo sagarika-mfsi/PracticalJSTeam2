@@ -21,22 +21,22 @@ let marks = 85;
 60-69  → D
 Below 60 → F*/
 if(marks >=90 && marks<=100){
-    //console.log("Grade A");
+    console.log("Grade A");
 }
 else if(marks >=80 && marks<=89){
-    //console.log("Grade B");
+    console.log("Grade B");
 }
 else if(marks >=70 && marks<=79){ // here it can be >70 only
-    //console.log("Grade C");
+    console.log("Grade C");
 }
 else if(marks >=60 && marks<=69){
-    //console.log("Grade D");
+    console.log("Grade D");
 }
 else if(marks >=0){
-    //console.log("Grade F");
+    console.log("Grade F");
 }
 else{
-    //console.log("invalid");
+    console.log("invalid");
 }
 
 //Conditional
@@ -48,18 +48,18 @@ if (x > 5) {
 }
 
 //SWITCH Practise
-let day = 2;
+let day = 10;
 switch (day) {
-    case 1:
-        console.log("Monday");
-    case 2:
-        console.log("Tuesday");
-        break;
-    case 2:
-        console.log("Wednesday");
-        break;
     default:
         console.log("Invalid");
+    case 1:
+        console.log("Monday");
+        break;
+    case 2:
+        console.log("Tuesday");
+        
+    case 3:
+        console.log("Wednesday");
 }
 
 //Simple ATM Program-------------------------

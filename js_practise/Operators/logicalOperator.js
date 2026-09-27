@@ -57,7 +57,7 @@ for || its vice versa
 */ 
 
 //console.log("Hello" && "World"); //true---query
-//console.log("qa" && ""); //false----query
+//console.log("qa" && "" && 0); //false----query
 //console.log("Hello" || "World"); //why not World?
 //console.log("" || "Hello"); //Hello
 //console.log(0 || 100); //100

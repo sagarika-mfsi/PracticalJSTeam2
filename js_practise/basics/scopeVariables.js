@@ -14,8 +14,9 @@ function test() {
   {
     var a = 30;
     let b = 40;
-    console.log(a, b); 
+    console.log(a, b); //30 40
   }
-  console.log(a, b);
+  console.log(a, b); //30 20
 }
 test();
+

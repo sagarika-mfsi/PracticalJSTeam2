@@ -21,8 +21,11 @@ let numbers1 = [10, 20, 30, 40, 50];
 
 //Q5. Print all array elements using a loop
 let numbers2 = [10, 20, 30, 40, 50];
-for (let i = 0; i < numbers.length; i++) {
+for (let i = 0; i < numbers2.length; i++) {
     //console.log(numbers[i]);
+}
+for (let k in numbers2) {
+    console.log(k);
 }
 
 //Q8. Add an element at the end using push()

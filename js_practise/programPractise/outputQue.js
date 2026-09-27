@@ -6,7 +6,7 @@ console.log(typeof NaN); //number
 
 //que 02
 let a = 10;
-let b = "10";
+let b = "10"; 
 console.log(a == b); //true
 console.log(a === b); //false
 
@@ -48,9 +48,11 @@ console.log(null ?? "Default"); //Default
 
 //que09
 let a1 = 5;
-console.log(a1++); //5
-console.log(++a1); //7
-console.log(a1); //7
+a1++;  
+console.log(a1++);
+console.log(a1); 
+console.log(++a1);
+console.log(a1); 
 
 //que10
 console.log(Boolean("")); //false

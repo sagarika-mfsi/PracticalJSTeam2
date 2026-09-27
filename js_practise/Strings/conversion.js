@@ -77,4 +77,4 @@ String numbers are converted to Number*/
 
 let v1 = "Hello";
 console.log(v1 - 5); //NaN
-console.log(v1 + 5); //Hello5
+console.log(v1 + 5 +10); //Hello510s

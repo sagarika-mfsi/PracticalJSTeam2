@@ -25,5 +25,5 @@ console.log(username);
 const d1 = new Date();
 console.log(d1);
 
-let id = Symbol("id"); 
+let id = Symbol("test"); 
 console.log(id);

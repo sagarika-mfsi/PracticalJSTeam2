@@ -61,11 +61,11 @@ let str6 = "hello world hello";
 console.log(str6.lastIndexOf("hello")); // 12
 console.log(str6.lastIndexOf("o")); // 16
 
-//substring() Extracts characters between two indexes.
+//substring() Extracts characters between two indexes.upto last index count
 
 let str7 = "JavaScript";
 console.log(str7.substring(0, 4)); // Java
-console.log(str7.substring(4, 10)); // Script
+console.log(str7.substring(4)); // Script
 
 //slice() Extracts part of a string.
 //-------------------------------------------------------------

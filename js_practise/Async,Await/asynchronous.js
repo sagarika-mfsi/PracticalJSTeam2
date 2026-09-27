@@ -14,6 +14,12 @@ async function f0(){
 console.log(f0());
 
 async function test() {
+    return "test"; ////bydefault promise.resolve("text")
+}
+
+console.log(test());
+
+async function test() {
     let result = await Promise.resolve("Hello"); //here if we remove await then it will give the promise itself, using await will give the result of the promise like in then
     console.log(result);
 }
@@ -88,3 +94,23 @@ async function f10(a,b){
 f10(1,2);
    
     
+async function test() {
+    console.log("A");
+
+    await Promise.resolve();
+
+    console.log("B");
+}
+
+console.log("C");
+
+test().then(() => {
+    console.log("D");
+});
+
+console.log("E");
+
+async function test() {
+    return await Promise.resolve(10);
+}
+console.log(test());
