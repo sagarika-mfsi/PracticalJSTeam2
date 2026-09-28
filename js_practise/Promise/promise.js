@@ -89,7 +89,7 @@ f1()
 
 let prom1 = Promise.resolve("Apple");
 
-let prom2 = Promise.reject("Banana failed");
+let prom2 = Promise.resolve("Banana failed");
 
 let prom3 = Promise.resolve("Mango");
 

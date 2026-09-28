@@ -69,7 +69,7 @@ test();
 for (var i = 0; i < 3; i++) {
     console.log(i); //0,1,2
 }
-//console.log(i); //3 here var will access the i inside for block and as it incremented to 3 after iteration its value now is 3
+console.log(i); //3 here var will access the i inside for block and as it incremented to 3 after iteration its value now is 3
 
 //---------------------------------
 for (let i = 0; i < 3; i++) {

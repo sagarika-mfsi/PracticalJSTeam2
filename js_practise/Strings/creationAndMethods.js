@@ -10,7 +10,9 @@ let boolString = String(true); // "true"
 
 //3. String Object (new String())
 let objString = new String("Hello");
-console.log(typeof objString); // "object"
+console.log(typeof objString);
+console.log(obj);
+ // "object"
 
 //String concatenation
 let firstName = "hello";

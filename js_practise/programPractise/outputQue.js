@@ -186,3 +186,47 @@ const numbers2 = [2, 4, 6, 8];
 
 console.log(numbers2.some(num => num % 2 !== 0)); //false
 console.log(numbers2.every(num => num % 2 === 0)); //true
+
+class Employee {
+    constructor(name) {
+        this.name = name;
+    }
+}
+
+const emp = new Employee("John");
+
+console.log(emp.name);
+
+class Employee {
+    constructor() {
+        this.name = "John";
+    }
+
+    display() {
+        console.log(this.name);
+    }
+}
+
+class Manager extends Employee {
+    constructor() {
+        super();
+        this.name = "Mike";
+    }
+}
+
+const manager = new Manager();
+
+manager.display();
+console.log(manager.name);
+
+let arr11 = [1, 2, 3,,,,,,,,10];
+console.log(arr11);
+arr11[10] = 5; 
+console.log(arr11.length); 
+console.log(arr11);
+
+const numbers10 = [10, 20, 30];
+
+numbers10[1] = 50;
+
+console.log(numbers10); //No
