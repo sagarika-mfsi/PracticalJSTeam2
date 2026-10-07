@@ -242,6 +242,126 @@ for(let l=1;l<=4;l++){
     for(let n=1;n<=star2;n++){
         str += "*"
     }
+    
     star2-=2;
     console.log(str);
+}
+
+/*
+    *
+   ***
+  *****
+ *******
+*********
+*/
+let star=1;
+for(let i=0;i<5;i++){
+    let str="";
+    for(let j=4;j>i;j--){
+        str+=" ";
+    }
+    console.log(str);
+    for(let k=1;k<=star;k++){
+        str+="*"
+    }
+    console.log(str)
+    star+=2; 
+}
+
+/*
+    A
+   
+   BBB
+  
+  CCCCC
+ 
+ DDDDDDD
+
+EEEEEEEEE
+*/
+let triangle=1;
+for(let i=0;i<5;i++){
+    let str="";
+    for(let j=4;j>i;j--){
+        str+=" ";
+    }
+    console.log(str);
+    for(let k=1;k<=triangle;k++){
+        str+=String.fromCharCode(65+i);
+    }
+    console.log(str)
+    triangle+=2; 
+}
+
+/*
+ Y Z A B C 
+  D E F G 
+   H I J 
+    K L 
+     M 
+*/
+let ch = 89;
+let space = 0;
+for(let i = 1; i <=7; i++){
+    let str = "";
+  for(let k = 1; k <=i; k++){
+    str+=" ";
+  }
+      space+=2;
+    for(let j = 5; j >= i; j--){
+        str += String.fromCharCode(ch) + " ";
+        ch++;
+        if(ch > 90){
+            ch = 65;
+        }
+    }
+      console.log(str);
+}
+
+/*
+bbbb*
+bbb*b*
+bb*b*b*
+b*b*b*b*
+*b*b*b*b*
+*/
+for(let i = 1; i <= 5; i++){
+    let str = "";
+
+    // b's before first *
+    for(let j = 1; j <= 5 - i; j++){
+        str += "b";
+    }
+
+    // * and b
+    for(let j = 1; j <= i; j++){
+        str += "*";
+
+        if(j < i){
+            str += "b";
+        }
+    }
+
+    console.log(str);
+}
+
+/*
+    5
+   545
+  54345
+ 5432345
+543212345
+*/
+for (let i = 5; i >= 1; i--) {
+    // 1. Spaces: just the current number minus 1
+    let row = ' '.repeat(i - 1);
+    
+    // 2. Left side: count down from 5 to the current number (i)
+    for (let j = 5; j >= i; j--) {
+        row += j;
+    }
+  for (let j = i + 1; j <= 5; j++) {
+        row += j;
+    }
+  console.log(row)
 }
