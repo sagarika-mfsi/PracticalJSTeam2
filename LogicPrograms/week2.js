@@ -8,15 +8,12 @@ b*b*b*b*
 for (let i = 1; i <= 5; i++) {
     let str = "";
 
-    // b's before first *
     for (let j = 1; j <= 5 - i; j++) {
         str += "b";
     }
 
-    // * and b
     for (let j = 1; j <= i; j++) {
         str += "*";
-
         if (j < i) {
             str += "b";
         }
