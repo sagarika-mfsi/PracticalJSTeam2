@@ -59,6 +59,23 @@ for (let i = 1; i <= 5; i++) {
 }
 
 /* Pattern 05
+1
+23
+456
+78910
+1112131415
+*/
+let c=1
+for (let i = 1; i <= 5; i++) {
+    let pattern = "";
+    for (let j = 1; j <= i; j++) {
+        pattern+= c;
+        c++;
+    }
+    console.log(pattern);
+}
+
+/* Pattern 05
 12345
 1234
 123
@@ -319,33 +336,6 @@ for(let i = 1; i <=7; i++){
 }
 
 /*
-bbbb*
-bbb*b*
-bb*b*b*
-b*b*b*b*
-*b*b*b*b*
-*/
-for(let i = 1; i <= 5; i++){
-    let str = "";
-
-    // b's before first *
-    for(let j = 1; j <= 5 - i; j++){
-        str += "b";
-    }
-
-    // * and b
-    for(let j = 1; j <= i; j++){
-        str += "*";
-
-        if(j < i){
-            str += "b";
-        }
-    }
-
-    console.log(str);
-}
-
-/*
     5
    545
   54345
@@ -355,13 +345,13 @@ for(let i = 1; i <= 5; i++){
 for (let i = 5; i >= 1; i--) {
     // 1. Spaces: just the current number minus 1
     let row = ' '.repeat(i - 1);
-    
+
     // 2. Left side: count down from 5 to the current number (i)
     for (let j = 5; j >= i; j--) {
         row += j;
     }
-  for (let j = i + 1; j <= 5; j++) {
+    for (let j = i + 1; j <= 5; j++) {
         row += j;
     }
-  console.log(row)
+    console.log(row)
 }

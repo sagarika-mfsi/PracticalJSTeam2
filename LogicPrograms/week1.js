@@ -42,3 +42,4 @@ for (let i = 0; i < wordsArray.length; i++) {
 console.log(res); 
 
 
+//anagram, panagram, string rotations, patterns, highest repeat , lowest, arrays
